@@ -4,7 +4,6 @@ import org.litepal.crud.DataSupport;
 
 /**
  * Created by HMF on 2018/12/18.
- *
  *  LitePal 中的每一个实体类都是必须要继承自 DataSupport类的
  */
 
