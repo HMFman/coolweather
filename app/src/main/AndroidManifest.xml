@@ -12,16 +12,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">     // 注册主活动页面
+        <activity android:name=".MainActivity">   // 注册主活动页面
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".WeatherActivity">  // 注册活动页面
         </activity>
+
+        <service
+            android:name=".service.AutoUpdateService"
+            android:enabled="true"
+            android:exported="true">    // 注册服务
+        </service>
     </application>
 
 </manifest>
